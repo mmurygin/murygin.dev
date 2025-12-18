@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxim Murygin - Senior Site Reliability Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">MM</a>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Maxim Murygin</h1>
+                <h2 class="hero-title">Senior Site Reliability Engineer</h2>
+                <p class="hero-location">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Amsterdam, Netherlands
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="static/cv.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+                    <a href="#experience" class="btn btn-secondary">View Experience</a>
+                </div>
+            </div>
+            <div class="hero-avatar">
+                <img src="static/profile.jpeg" alt="Maxim Murygin" class="avatar-image">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Site Reliability Engineer with <strong>15+ years of experience</strong> spanning software development, infrastructure, and platform engineering. 
+                </p>
+                <p class="about-text">
+                    My career began with five years focused on backend development and software architecture, building a strong foundation in writing clean, maintainable code and designing scalable systems. Driven by curiosity about how things work under the hood, I expanded into infrastructure—mastering compute, networking, and cloud technologies. This evolution led me to platform engineering, where I've gained hands-on experience building developer platforms serving thousands of engineers, learning valuable lessons from both successes and failures along the way.
+                </p>
+                <p class="about-text">
+                    I'm passionate about making software and infrastructure truly reliable. I thrive on eliminating toil, optimizing inefficiencies, and establishing robust observability and incident response processes. For me, the most rewarding work is enabling teams to ship confidently while keeping systems resilient.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Site Reliability Engineer</h3>
+                            <a href="https://www.booking.com" target="_blank" class="company">Booking.com</a>
+                            <span class="period">Nov 2024 - Present</span>
+                            <span class="location">Amsterdam Area</span>
+                        </div>
+                        <p class="timeline-description">
+                            Working on distributed scheduling platform with thousands of jobs on top of baremetal and Kubernetes.
+                        </p>
+                        <ul class="achievements">
+                            <li>Designed and lead the MVP of deploying Function-as-a-Service platform on top of Kubernetes</li>
+                            <li>Helped to discover and mitigate one of the biggest security breach in platform history</li>
+                            <li>Led the initiative to decrease toil and automate routine tasks</li>
+                            <li>Improved incident handling by reducing alert fatigue and setting up proper monitoring</li>
+                            <li>Early adopter of AI tools (Windsurf, Komodor), trained developers on productivity</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Puppet</span>
+                            <span class="tech-tag">LLM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Site Reliability Engineer</h3>
+                            <a href="https://www.booking.com" target="_blank" class="company">Booking.com</a>
+                            <span class="period">Aug 2022 - Oct 2024</span>
+                            <span class="location">Amsterdam, Netherlands</span>
+                        </div>
+                        <p class="timeline-description">
+                            Design and implementation of a private cloud platform. Leading the onboarding of critical services (including the one serving main page of Booking.com) to this platform.
+                        </p>
+                        <ul class="achievements">
+                            <li>Unblocked migration of key services to Private Cloud - more than 10% of booking workload served by the platform</li>
+                            <li>Played key role in solving performance issues after migrating critical workload to virtualization</li>
+                            <li>Main driver in building comprehensive documentation and knowledge sharing</li>
+                            <li>Created/reviewed dozens of design docs focusing on reliability and trade-offs</li>
+                            <li>Go-to engineer for EMs, PMs, and GPMs for urgent solutions on critical paths</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">OpenStack</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Puppet</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Grafana</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Site Reliability Engineer</h3>
+                            <a href="https://www.booking.com" target="_blank" class="company">Booking.com</a>
+                            <span class="period">May 2020 - Jul 2022</span>
+                            <span class="location">Amsterdam, Netherlands</span>
+                        </div>
+                        <p class="timeline-description">
+                            SRE in Core Infrastructure. Building from scratch and maintaining an integration layer between OpenStack-based Private Cloud and internal services.
+                        </p>
+                        <ul class="achievements">
+                            <li>Designed and took major role in implementing internal platform with 8000+ VMs for 2000+ developers</li>
+                            <li>Guided adoption of IaC with Terraform, developed internal modules and helped AWS team setup private registry</li>
+                            <li>Built comprehensive SOX compliance controls with Risk and Compliance team</li>
+                            <li>Onboarded 6 new team members and empowered engineers through pair programming</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">OpenStack</span>
+                            <span class="tech-tag">GoLang</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Site Reliability Engineer</h3>
+                            <a href="https://rubius.com" target="_blank" class="company">Rubius</a>
+                            <span class="period">Aug 2016 - Mar 2020</span>
+                            <span class="location">Tomsk, Russia</span>
+                        </div>
+                        <p class="timeline-description">
+                            SRE in an outsourced team building web services for data processing and ML training sets. Processed 10+ TB of data with peak load of 1200 messages/second.
+                        </p>
+                        <ul class="achievements">
+                            <li>Migrated from monolith to microservices architecture</li>
+                            <li>Implemented CI/CD pipelines and moved to Kubernetes</li>
+                            <li>Built strong monitoring and alerting systems</li>
+                            <li>Enabled multiple releases per day through infrastructure improvements</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">GCP</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Backend Developer</h3>
+                            <a href="https://rubius.com" target="_blank" class="company">Rubius</a>
+                            <span class="period">Jun 2015 - Jul 2016</span>
+                            <span class="location">Tomsk, Russia</span>
+                        </div>
+                        <p class="timeline-description">
+                            Lead Developer building web service for labeling data (similar to Mechanical Turk) for US company.
+                        </p>
+                        <ul class="achievements">
+                            <li>Implemented real-time monitoring of production performance</li>
+                            <li>Gathered and optimized critical production requests</li>
+                            <li>Implemented stress tests to prevent performance degradation</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">GCP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Backend Developer</h3>
+                            <a href="https://rubius.com" target="_blank" class="company">Rubius</a>
+                            <span class="period">Oct 2013 - May 2015</span>
+                            <span class="location">Tomsk, Russia</span>
+                        </div>
+                        <p class="timeline-description">
+                            Backend development of enterprise project management system.
+                        </p>
+                        <ul class="achievements">
+                            <li>Made significant refactoring to make system testable</li>
+                            <li>Increased test coverage from 0% to 30%, inspiring team to reach 90%</li>
+                            <li>Showed other developers the value of tests and how to write them</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>R&D Intern</h3>
+                            <a href="https://tpu.ru/en" target="_blank" class="company">Tomsk Polytechnic University</a>
+                            <span class="period">Sep 2010 - Jun 2013</span>
+                            <span class="location">Tomsk, Russia</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developed bacterial population monitoring system by building asymptotic solutions of the Fisher-Kolmogorov equation followed by modeling in MatLab.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">MatLab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                            <rect x="9" y="9" width="6" height="6"></rect>
+                            <line x1="9" y1="1" x2="9" y2="4"></line>
+                            <line x1="15" y1="1" x2="15" y2="4"></line>
+                            <line x1="9" y1="20" x2="9" y2="23"></line>
+                            <line x1="15" y1="20" x2="15" y2="23"></line>
+                            <line x1="20" y1="9" x2="23" y2="9"></line>
+                            <line x1="20" y1="14" x2="23" y2="14"></line>
+                            <line x1="1" y1="9" x2="4" y2="9"></line>
+                            <line x1="1" y1="14" x2="4" y2="14"></line>
+                        </svg>
+                        Infrastructure & Cloud
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">OpenStack</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Google Cloud Platform</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Puppet</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Packer</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                        Monitoring & Observability
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Graphite</span>
+                        <span class="skill-tag">StackDriver</span>
+                        <span class="skill-tag">Incident Response</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                        Databases
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                        Practices & Architecture
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Site Reliability Engineering</span>
+                        <span class="skill-tag">Systems Design</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">High Availability</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">DevOps</span>
+                        <span class="skill-tag">Infrastructure as Code</span>
+                        <span class="skill-tag">Domain-Driven Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Soft Skills
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Decision-Making</span>
+                        <span class="skill-tag">Solution Architecture</span>
+                        <span class="skill-tag">Team Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                <a href="https://www.youracclaim.com/badges/f0fc8e48-f6c9-446e-b068-e44430108176" target="_blank" class="cert-card">
+                    <div class="cert-logo aws">AWS</div>
+                    <h3>AWS Certified Developer – Associate</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">March 2021</p>
+                </a>
+
+                <a href="https://verify.skilljar.com/c/fqgfpavod3tf" target="_blank" class="cert-card">
+                    <div class="cert-logo pagerduty">PD</div>
+                    <h3>Certified Incident Responder</h3>
+                    <p class="cert-issuer">PagerDuty</p>
+                    <p class="cert-date">March 2021</p>
+                </a>
+
+                <a href="static/openstack-coa.pdf" target="_blank" class="cert-card">
+                    <div class="cert-logo openstack">OS</div>
+                    <h3>Certified OpenStack Administrator (COA)</h3>
+                    <p class="cert-issuer">OpenStack</p>
+                    <p class="cert-date">December 2020</p>
+                </a>
+
+                <a href="https://www.youracclaim.com/badges/3ee9450c-9d80-45fc-bfa8-322cadf17346" target="_blank" class="cert-card">
+                    <div class="cert-logo aws">AWS</div>
+                    <h3>AWS Certified SysOps Administrator - Associate</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">August 2019</p>
+                </a>
+
+                <a href="https://www.youracclaim.com/badges/ff7ae732-33a8-4b35-99fc-70e12487ef26" target="_blank" class="cert-card">
+                    <div class="cert-logo aws">AWS</div>
+                    <h3>AWS Certified Solutions Architect - Associate</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">July 2019</p>
+                </a>
+
+                <a href="https://rhtapps.redhat.com/verify?certId=190-050-328" target="_blank" class="cert-card">
+                    <div class="cert-logo redhat">RH</div>
+                    <h3>Red Hat Certified Engineer (RHCE)</h3>
+                    <p class="cert-issuer">Red Hat</p>
+                    <p class="cert-date">April 2019</p>
+                </a>
+
+                <a href="https://rhtapps.redhat.com/verify?certId=190-050-328" target="_blank" class="cert-card">
+                    <div class="cert-logo redhat">RH</div>
+                    <h3>Red Hat Certified System Administrator (RHCSA)</h3>
+                    <p class="cert-issuer">Red Hat</p>
+                    <p class="cert-date">March 2019</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
+                <div class="edu-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                </div>
+                <div class="edu-content">
+                    <h3><a href="https://tpu.ru/en" target="_blank"></a>Tomsk Polytechnic University</a></h3>
+                    <p class="edu-degree">Engineer's Degree</p>
+                    <p class="edu-period">2006 - 2012</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Recommendations</h2>
+            <p class="recommendations-link">View all recommendations on <a href="https://linkedin.com/in/mmurygin" target="_blank">LinkedIn</a></p>
+            <div class="recommendations-grid">
+                <div class="recommendation-card">
+                    <div class="quote-icon">"</div>
+                    <p class="recommendation-text">
+                        Maxim is easy to work with and stands out as a highly responsible person with good organizational and communication skills. During my 4 year work relationship he was a reliable business partner during crisis or an engineering architect solving complex technical problems. He successfully managed a team of developers and customers across different regions around the world. Maxim would be a great asset in any tech company!
+                    </p>
+                    <div class="recommendation-author">
+                        <div class="author-info">
+                            <strong>Eldar Khaliullin</strong>
+                            <span>Principal Software Engineer at Magic Leap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="quote-icon">"</div>
+                    <p class="recommendation-text">
+                        Maxim is very diligent and responsible Team Lead and strong development expert. He is proactive and learn quickly, a good team player, attentive to detail and people. I would definitely recommend Maxim to anyone.
+                    </p>
+                    <div class="recommendation-author">
+                        <div class="author-info">
+                            <strong>Sergey Dorofeev</strong>
+                            <span>Co-founder at Rubius</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">
+                I'm open to discussing new opportunities and interesting projects.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:muriginm@gmail.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>muriginm@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/mmurygin" target="_blank" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Maxim Murygin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
